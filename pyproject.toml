@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "homeworks"
+version = "0.1.0"
+description = "software_development_technologies"
+authors = ["Yury Borodich <xkxixnxgx@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.2"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.5.0"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
