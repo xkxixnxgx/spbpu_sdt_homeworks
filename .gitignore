@@ -3,3 +3,8 @@ __pycache__
 .vscode
 
 .ipynb_checkpoints
+
+*.jpg
+*.png
+
+learning_materials
