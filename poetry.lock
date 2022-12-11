@@ -1838,10 +1838,30 @@ category = "main"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 
+[[package]]
+name = "xgboost"
+version = "1.7.2"
+description = "XGBoost Python Package"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+numpy = "*"
+scipy = "*"
+
+[package.extras]
+dask = ["dask", "distributed", "pandas"]
+datatable = ["datatable"]
+pandas = ["pandas"]
+plotting = ["graphviz", "matplotlib"]
+pyspark = ["cloudpickle", "pyspark", "scikit-learn"]
+scikit-learn = ["scikit-learn"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "3.10.2"
-content-hash = "1cc746a68fb1d91df812e21418b52a665839c3018802fa2ff4df5e8d9e3d12ea"
+content-hash = "bb8d4feacff81f4e7cea3c7a95e7e4882da5874920a0fd5c354d390428228215"
 
 [metadata.files]
 absl-py = [
@@ -3231,4 +3251,12 @@ wrapt = [
     {file = "wrapt-1.14.1-cp39-cp39-win32.whl", hash = "sha256:dee0ce50c6a2dd9056c20db781e9c1cfd33e77d2d569f5d1d9321c641bb903d5"},
     {file = "wrapt-1.14.1-cp39-cp39-win_amd64.whl", hash = "sha256:dee60e1de1898bde3b238f18340eec6148986da0455d8ba7848d50470a7a32fb"},
     {file = "wrapt-1.14.1.tar.gz", hash = "sha256:380a85cf89e0e69b7cfbe2ea9f765f004ff419f34194018a6827ac0e3edfed4d"},
+]
+xgboost = [
+    {file = "xgboost-1.7.2-py3-none-macosx_10_15_x86_64.macosx_11_0_x86_64.macosx_12_0_x86_64.whl", hash = "sha256:011126d470179177486e92c6a52c3f5deb9dd3e07a65eec5df9bf7dd1a70d2d0"},
+    {file = "xgboost-1.7.2-py3-none-macosx_12_0_arm64.whl", hash = "sha256:a3cf6d2e6e56147546a725d8301f06af33b8467179e17b11f63be9a6d7a9ccd3"},
+    {file = "xgboost-1.7.2-py3-none-manylinux2014_aarch64.whl", hash = "sha256:6f192542fbee7f07891a3b78616ef1f87013e22e33836507344a230188db784e"},
+    {file = "xgboost-1.7.2-py3-none-manylinux2014_x86_64.whl", hash = "sha256:51351d0a5e26016c348df23cdb2069a26bf41a9e586a24e552078435a110510a"},
+    {file = "xgboost-1.7.2-py3-none-win_amd64.whl", hash = "sha256:08ca6b3400dfd16f6159b2881f41b7443024339c14c5dbe10bba117af79126ab"},
+    {file = "xgboost-1.7.2.tar.gz", hash = "sha256:f1a749aedb9330afc48007cc78b8bbbbea35ce372f48a2735f9c71bbc7b8dcfb"},
 ]
